@@ -1,2 +1,7 @@
-interfacedesign-prototype-cmp02
+Interface Design
 ===============================
+
+Author:
+Ka Hei Chan
+Chi Kit Chan
+
