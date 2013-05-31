@@ -15,10 +15,30 @@
 	text-align:center;
 }
 
+#content {
+	text-align:justify;
+	text-justify:inter-word;
+}
+
 #mynav {
 	width: 480px;
 	position:absolute;
 	bottom: -15px;
 
 	text-align: center;
+}
+
+.thumbnail {
+	float: right;
+	max-width: 150px;
+	max-height: 150px;
+	margin-left: 10px;
+}
+
+#content section {
+	background-color: #F4F4F4;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
 }
