@@ -4,7 +4,7 @@
 	margin-right: auto;
 	margin-top: 10px;
 	
-	width: 480px;;
+	width: 480px;
 	height: 720px;
 	
 	border:1px solid;
@@ -28,7 +28,7 @@
 	text-align: center;
 }
 
-.thumbnail {
+#headline .thumbnail {
 	float: right;
 	max-width: 150px;
 	max-height: 150px;
@@ -36,9 +36,10 @@
 }
 
 #content #headline {
-	background-color: #F4F4F4;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 5px;
-	border-radius: 5px;
+
 }
+
+#content #category {
+	
+}
+
