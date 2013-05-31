@@ -40,6 +40,11 @@
 }
 
 #content #category {
+	background-color: #F4F4F4;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
 
 }
 
