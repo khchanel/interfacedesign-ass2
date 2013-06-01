@@ -56,3 +56,12 @@
 #category .btn {
 	width: 80%;
 }
+
+
+#news .paragraphs {
+	overflow: auto;
+	height: 380px;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+}
