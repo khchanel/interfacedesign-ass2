@@ -1,0 +1,2 @@
+Home screen 
+theme of catalogue on the left side deosnt match  the shortcut in middle 
