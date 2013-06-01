@@ -57,10 +57,19 @@
 	width: 80%;
 }
 
+#news {
+	position: relative;
+	top: -25px;
+}
+
+#suggestion {
+	position: relative;
+	top: -25px;
+}
 
 #news .paragraphs {
 	overflow: auto;
-	height: 380px;
+	height: 320px;
 	border: 1px solid;
 	border-radius: 5px;
 	padding: 10px;
