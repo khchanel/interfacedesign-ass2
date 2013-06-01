@@ -88,3 +88,11 @@
 	position: relative;
 	top: -80px;
 }
+
+.bgimg {
+	background-image: url(../img/home.png);
+	background-size: 100% auto;
+}
+.alignleft {
+	float: left;
+}
