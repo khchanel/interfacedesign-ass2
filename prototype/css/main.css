@@ -65,3 +65,17 @@
 	border-radius: 5px;
 	padding: 10px;
 }
+
+#phone-btn {
+	width: 60px;
+	height: 60px;
+	border-radius: 999px;
+	border: 3px solid #000000;
+	background: grey;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: relative;
+	top: -80px;
+}
