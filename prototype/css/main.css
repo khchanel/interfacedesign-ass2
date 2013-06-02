@@ -93,6 +93,11 @@
 	background-image: url(../img/home.png);
 	background-size: 100% auto;
 }
+
 .alignleft {
 	float: left;
+}
+
+.hottopic{
+	width:100%
 }
