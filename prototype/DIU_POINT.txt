@@ -1,2 +1,11 @@
 Home screen 
 theme of catalogue on the left side deosnt match  the shortcut in middle 
+
+Popup : 
+ Aesthetic and minimalist design
+Close button and X on top right corner perform the same function (quit)
+
+news : 
+Flexibility and efficiency of use
+Recommendation of news doesnt relvant to reading news
+MJ --> 9 dollar records 
