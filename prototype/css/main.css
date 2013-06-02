@@ -98,6 +98,18 @@
 	float: left;
 }
 
-.hottopic{
-	width:100%
+.alignright{
+	float: right;
+}
+
+.table-hottopic{
+	width:100%;
+}
+
+.td-hottopic{
+	width:50%;
+}
+
+.img-worldnews {
+width:100%;
 }
