@@ -1,11 +1,30 @@
 Home screen 
-theme of catalogue on the left side deosnt match  the shortcut in middle 
+	theme of catalogue on the left side deosnt match  the shortcut in middle 
 
 Popup : 
- Aesthetic and minimalist design
-Close button and X on top right corner perform the same function (quit)
+	Aesthetic and minimalist design
+	Close button and X on top right corner perform the same function (quit)
 
 news : 
-Flexibility and efficiency of use
-Recommendation of news doesnt relvant to reading news
-MJ --> 9 dollar records 
+	1.	Flexibility and efficiency of use
+	Recommendation of news doesnt relvant to reading news
+	MJ --> 9 dollar records 
+
+	2.	first time  pressed is pressed? no shit
+	second pressed change Follow -> Followed
+	2nd diuation : put followed label near news topic
+
+worldmap:
+	>>
+	what 9 is this
+
+
+Catelouge fucntion:
+	first time  put catelogue in menu sin
+	second time put below cold war's new(above bar)
+	2nd diuation ->put on map
+	
+Next button:	
+	Aesthetic and minimalist design
+	next button rarely used 
+	diu at 2nd diuation
