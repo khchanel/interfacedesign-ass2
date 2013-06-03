@@ -35,3 +35,7 @@ why show link on99? no preview
 menu: 
 Should add followed list to show news followed
 
+world news -> sports
+Only the world map has been updated 
+but not the headings and news highlight 
+2nd Version : the headings and news highlight are updtaed to sport related.
