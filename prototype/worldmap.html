@@ -61,13 +61,24 @@
 									})
 									var mjpredie = new markicon({iconUrl:'img/news/MJ.png'})
 									var future = new markicon({iconUrl: 'img/news/future.jpg'})	
+									var	nasa = new markicon({iconUrl: 'img/news/nasa.jpg'})
+									var mars = new markicon({iconUrl: 'img/news/mars.png'})
+									var unemployment = new markicon({iconUrl: 'img/news/unemployment.png'})
+
 									<!-- set link -->
 									var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die</a>';
 									var futurelink = '<a href="news-future.html" class="speciallink">High-tech city planning 2025</a>';
+									var nasalink = '<a href="news-nasa.html" class="speciallink">Erupts on the Sun</a>'
+									var marslink = '<a href="news-mars.html" class="speciallink">Ready for the trip to Mars</a>'
+									var unemploymentlink = '<a href="news-unemployment.html" class="speciallink">Sydney unemployment rate 2024</a>'
 
 									<!-- add markers-->
 									L.marker([41.83683,-87.71484],{icon: mjpredie}).addTo(map).bindPopup(mjpredielink);
 									L.marker([-33.87042, 151.25977],{icon: future}).addTo(map).bindPopup(futurelink)
+									L.marker([-36.03133, 146.60156],{icon: unemployment}).addTo(map).bindPopup(unemploymentlink)
+									L.marker([38.88304, -77.01622],{icon: nasa}).addTo(map).bindPopup(nasalink)
+									L.marker([39.90974, -121.64063],{icon: mars}).addTo(map).bindPopup(marslink)
+
 								</script>
 							</div>
 						</div>
