@@ -60,11 +60,11 @@ function addsports(){
 	var racing = new markicon({iconUrl:'img/news/racing.jpg'});
 	var boxing = new markicon({iconUrl:'img/news/boxing.jpg'});
 	//<!-- set link -->
-	var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die';
-	var nasalink = '<a href="news-nasa.html" class="speciallink">Erupts on the Sun';
-	var marslink = '<a href="news-mars.html" class="speciallink">Ready for the trip to Mars</a>';
+	var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die</a>';
+	var racinglink = '<a href="news-racing.html" class="speciallink">New racing bike</a>';
+	var boxinglink = '<a href="news-boxing.html" class="speciallink">Epic punch is epic</a>';
 	//<!-- add markers-->
 	L.marker([41.83683,-87.71484],{icon: mjpredie}).addTo(map).bindPopup(mjpredielink);
-	L.marker([38.88304, -77.01622],{icon: racing}).addTo(map).bindPopup(nasalink);
-	L.marker([39.90974, -121.64063],{icon: boxing}).addTo(map).bindPopup(marslink);
+	L.marker([38.88304, -77.01622],{icon: racing}).addTo(map).bindPopup(racinglink);
+	L.marker([39.90974, -121.64063],{icon: boxing}).addTo(map).bindPopup(boxinglink);
 }

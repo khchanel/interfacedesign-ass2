@@ -61,10 +61,10 @@ function addsports(){
 	var boxing = new markicon({iconUrl:'img/news/boxing.jpg'});
 	//<!-- set link -->
 	var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die</a><br/><img class="img-map pagination-centered"src="img/news/mjdunk.png">';
-	var nasalink = '<a href="news-nasa.html" class="speciallink">Erupts on the Sun</a><br/><img class="img-map pagination-centered"src="img/news/racing.jpg">';
-	var marslink = '<a href="news-mars.html" class="speciallink">Ready for the trip to Mars</a><br/><img class="img-map pagination-centered"src="img/news/boxing.jpg">';
+	var racinglink = '<a href="news-racing.html" class="speciallink">New racing bike</a><br/><img class="img-map pagination-centered"src="img/news/racing.jpg">';
+	var boxinglink = '<a href="news-boxing.html" class="speciallink">Epic punch is epic</a><br/><img class="img-map pagination-centered"src="img/news/boxing.jpg">';
 	//<!-- add markers-->
 	L.marker([41.83683,-87.71484],{icon: mjpredie}).addTo(map).bindPopup(mjpredielink);
-	L.marker([38.88304, -77.01622],{icon: racing}).addTo(map).bindPopup(nasalink);
-	L.marker([39.90974, -121.64063],{icon: boxing}).addTo(map).bindPopup(marslink);
+	L.marker([38.88304, -77.01622],{icon: racing}).addTo(map).bindPopup(racinglink);
+	L.marker([39.90974, -121.64063],{icon: boxing}).addTo(map).bindPopup(boxinglink);
 }
