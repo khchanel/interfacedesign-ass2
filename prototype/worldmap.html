@@ -10,6 +10,11 @@
 		<!-- css -->
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.css" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
+		<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+		<script src="https://raw.github.com/gist/2197042/2b90c41b39b7d5b3a851d8f256de2ebd3fe1fb74/leaflet-google.js"></script>
 	</head>
 
 	<body>
@@ -24,20 +29,23 @@
 					</div>
 				</div>
 			</div>
-
-
 			<div id="content">
 				<div class="container-fluid">
 
 					<section id="news">
 						<div class="row-fluid" style="position:relative;">
 							<div class="span12">
+								<!-- for spacing between title and map -->
 								<div class="content-heading">
 									<h2></h2>
 								</div>
-								<div>
-									<p>shit map here?</p>
-								</div>	
+								<!-- world map -->
+    							<div style="width:440px; height:320px" id="map"></div>
+    							<script type='text/javascript'>
+      								var map = new L.Map('map', {center: new L.LatLng(51.51, -0.11), zoom:1});
+      								var googleLayer = new L.Google('ROADMAP');
+      								map.addLayer(googleLayer);
+    							</script>
 							</div>
 						</div>
 					</section>
