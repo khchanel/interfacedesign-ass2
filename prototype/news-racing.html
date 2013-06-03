@@ -37,7 +37,9 @@
 								</div>
 
 								<div class="paragraphs">
-									<div  id="img" class="pagination-centered"><img class="img-rounded" src="img/news/racing.jpg"></div>
+									<div  id="img" class="pagination-centered">
+										<img class="img-rounded" src="img/news/racing.jpg">
+									</div>
 									<br/><br/>
 
 									<p>
@@ -69,6 +71,33 @@
 				</div>
 			</div>
 
+			<section id="projection">
+				<div id="projector" class="modal hide fade" style="width:800px; margin-left:-400px">
+					<div class="modal-header">
+						<a class="close" data-dismiss="modal">×</a>
+						<h2>New racing bike</h2>
+					</div>
+
+					<div class="modal-body  pagination-centered">
+						<div id="img" class="pagination-centered">
+							<img class="img-rounded" src="img/news/racing.jpg">
+						</div>
+						<br/><br/>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis risus nisi. Suspendisse eros eros, suscipit in ultrices id, hendrerit nec purus. Nullam nisl eros, sagittis a vestibulum ut, pulvinar at erat. Mauris id nisl congue risus tempus volutpat et ac leo. Vestibulum lacus nisi, convallis a mattis nec, imperdiet nec lacus. Pellentesque dapibus, mauris sit amet mattis scelerisque, enim risus aliquam dui, viverra tempus enim arcu quis magna. Vivamus a tortor eros, quis auctor urna. Sed sit amet sem arcu, et sagittis diam. Vivamus aliquam pretium velit, nec dapibus leo pretium quis. Cras eu felis in purus mollis ullamcorper quis ac libero. Etiam sed quam lorem. Etiam sapien lectus, fermentum in tempus nec, commodo ut sem. Donec vel convallis odio. Maecenas vitae ipsum magna.
+						</p>
+
+						<p>
+							Praesent risus massa, ullamcorper nec cursus a, lobortis a ante. Nulla vitae augue diam. Sed eu rutrum arcu. Praesent ultrices dolor convallis eros pharetra eget pellentesque neque porttitor. Nunc lectus nisl, congue ut feugiat sed, venenatis blandit sapien. Nulla id leo nec massa imperdiet interdum. Nam commodo viverra leo. Maecenas eget sapien nisi. In hac habitasse platea dictumst. Proin ultricies, augue nec rhoncus adipiscing, ante justo viverra odio, interdum vehicula est erat sed nisi. In hac habitasse platea dictumst. Nunc magna lorem, ultrices at tristique ac, cursus in sem.
+						</p>
+
+						<p>
+							Nulla sollicitudin vulputate orci in euismod. Nam quam ligula, consectetur in sodales et, tempor eget ligula. Vestibulum eget quam at diam rhoncus commodo. Proin volutpat, leo vitae feugiat luctus, magna nibh porttitor enim, et tempor risus dui mattis dolor. Duis purus augue, feugiat sed interdum eu, dignissim et elit. Duis faucibus augue quis dolor accumsan eleifend pellentesque lacus dictum. Nulla magna odio, pulvinar sed pharetra eu, facilisis aliquam nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque vitae lacus nisl, at varius elit. Integer convallis accumsan blandit. Fusce feugiat blandit nunc, non tempor dui interdum id.
+						</p>
+					</div>
+				</div>
+			</section>
 
 			<!-- bottom navbar -->
 			<div id="mynav">
@@ -81,7 +110,7 @@
 
 							<div class="nav-collapse collapse">
 								<ul class='nav'>
-									<li><a href="#"><i class="icon-list-alt"></i>Projector</a></li>
+									<li><a id="trigger" href="#projector" data-toggle="modal"><i class="icon-list-alt"></i>Projector</a></li>
 									<li><a href="" onclick="back()"><i class="icon-arrow-left"></i>Last</a></li>
 									<li><a href="home.html"><i class="icon-home"></i>Home</a></li>
 									<li><a href="" onclick="forward()"><i class="icon-arrow-right"></i>Next</a></li>
