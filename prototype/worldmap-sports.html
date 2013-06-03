@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Awesome News Reader</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- css -->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.css" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+		<script src="js/map.js"></script>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+
+			<div id="title">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="container">
+							<h1>World News</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				<div class="container-fluid">
+
+					<section id="news">
+						<div class="row-fluid" style="position:relative;">
+							<div class="span12">
+								<!-- for spacing between title and map -->
+								<div class="content-heading">
+									<h2></h2>
+								</div>
+
+								<!-- world map -->
+								<div style="width:440px; height:320px" id="map"></div>
+								<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+
+								<!-- map initialize-->
+								<script>
+									addsports();
+								</script>
+
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!-- cold war news bar-->
+			<div class="navbar"id="hottopic">
+				<div class="navbar-inner pagination-centered">
+					<h4>NEWS HIGHLIGHT AROUND THE WORLD</h4>
+				</div>
+				<table class="table-hottopic">
+				<tr>
+					<td class="td-hottopic"><a onclick="settosyd()"><img class="img-worldnews"src="img/news/future.jpg"></a></td> 
+					<td class="td-hottopic">
+						<table class="table-hottopic">
+							<tr><p class="pagination-centered"><b>Lorem ipsum dolor sit amet</b></p></tr>
+							<tr><div align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis risus nisi. Suspendisse eros eros, suscipit in ultrices id, hendrerit nec purus. Nullam nisl eros, sagittis a vestibulum ut, pulvinar at erat. Mauris id nisl congue risus tempus volutpat et ac leo........ <b><a class="alignright"href="news-future.html">Read more</a></b></div></tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</div>
+			<!-- bottom navbar -->
+			<div id="mynav">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="container">
+							<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+								<span class="icon-bar"></span>
+							</a>
+
+							<div class="nav-collapse collapse">
+								<ul class='nav'>
+									<li><a href="#"><i class="icon-list-alt"></i>Menu</a></li>
+									<li><a href="" onclick="back()"><i class="icon-arrow-left"></i>Last</a></li>
+									<li><a href="home.html"><i class="icon-home"></i>Home</a></li>
+									<li><a href="" onclick="forward()"><i class="icon-arrow-right"></i>Next</a></li>
+									<li><a href="#"><i class="icon-star"></i>Follow</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- wrapper -->
+
+		<div id="phone-btn">
+			<br/>
+			<a href="index.html" >　　　　　　</a>
+		</div>
+		<!-- javascript -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+
+</html>
