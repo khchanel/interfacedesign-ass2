@@ -12,9 +12,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.css" />
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.css" />
-		<script src="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
-		<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
-		<script src="https://raw.github.com/gist/2197042/2b90c41b39b7d5b3a851d8f256de2ebd3fe1fb74/leaflet-google.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
 	</head>
 
 	<body>
@@ -40,12 +38,32 @@
 									<h2></h2>
 								</div>
 								<!-- world map -->
-    							<div style="width:440px; height:320px" id="map"></div>
-    							<script type='text/javascript'>
-      								var map = new L.Map('map', {center: new L.LatLng(51.51, -0.11), zoom:1});
-      								var googleLayer = new L.Google('ROADMAP');
-      								map.addLayer(googleLayer);
-    							</script>
+							<div style="width:440px; height:320px" id="map"></div>
+								<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+								<!-- map initialize-->
+								<script>
+								var map = L.map('map').setView([39.90974,4.21875], 1);
+
+								L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
+								  attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade. Font Awesome by Dave Gandy',
+								  key: 'BC9A493B41014CAABB98F0471D759707',
+								  detectRetina: true
+								}).addTo(map);
+								<!-- markers icon -->
+								var markicon = L.Icon.extend({
+									options:{
+										iconSize:		[30, 30],
+										shadowSize:		[50, 64],
+										shadowAnchor:   [4, 62],
+										popupAnchor:	[0, -10]										
+									}
+								})
+								var mjpredie = new markicon({iconUrl:'img/news/MJ.png'})
+								<!-- set link -->
+								var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die</a>';
+								<!-- add markers-->
+								L.marker([41.83683,-87.71484],{icon: mjpredie}).addTo(map).bindPopup(mjpredielink);
+							</script>
 							</div>
 						</div>
 					</section>
