@@ -28,3 +28,10 @@ Next button:
 	Aesthetic and minimalist design
 	next button rarely used 
 	diu at 2nd diuation
+	
+popup:
+why show link on99? no preview
+
+menu: 
+Should add followed list to show news followed
+
