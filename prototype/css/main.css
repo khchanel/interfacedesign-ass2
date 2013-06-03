@@ -111,5 +111,10 @@
 }
 
 .img-worldnews {
-width:100%;
+	width:100%;
+}
+
+.img-category{
+	width:50%;
+	height:50%;
 }
