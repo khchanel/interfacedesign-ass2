@@ -36,56 +36,27 @@
 								<div class="content-heading">
 									<h2></h2>
 								</div>
-
 								<!-- world map -->
-								<div style="width:440px; height:320px" id="map"></div>
-								<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-
-								<!-- map initialize-->
-								<script>
-									var map = L.map('map').setView([37.02323,-98.61328], 3);
-
-									L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
-											attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade. Font Awesome by Dave Gandy',
-											key: 'BC9A493B41014CAABB98F0471D759707',
-											detectRetina: true
-									}).addTo(map);
-									<!-- markers icon -->
-									var markicon = L.Icon.extend({
-										options:{
-											iconSize:		[30, 30],
-											shadowSize:		[50, 64],
-											shadowAnchor:	[4, 62],
-											popupAnchor:	[0, -10]										
-										}
-									})
-									var mjpredie = new markicon({iconUrl:'img/news/MJ.png'})
-									var future = new markicon({iconUrl: 'img/news/future.jpg'})	
-									<!-- set link -->
-									var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die</a>';
-									var futurelink = '<a href="news-future.html" class="speciallink">High-tech city planning 2025</a>';
-
-									<!-- add markers-->
-									L.marker([41.83683,-87.71484],{icon: mjpredie}).addTo(map).bindPopup(mjpredielink);
-									L.marker([-33.87042, 151.25977],{icon: future}).addTo(map).bindPopup(futurelink)
-								</script>
-							</div>
+								<div style="width:440px; height:317px" id="map">
+								<a href="worldmap.html"><img class="img-map"src="img/map.png"></a>
+								</div>
 						</div>
 					</section>
 				</div>
 			</div>
+
 			<!-- cold war news bar-->
 			<div class="navbar"id="hottopic">
-				<div class="navbar-inner pagination-centered">
-					<h4>NEWS HIGHLIGHT AROUND THE WORLD</h4>
+				<div class="navbar-inner  pagination-centered">
+					<h2>COLD WAR II</h2>
 				</div>
-				<table class="table-hottopic">
+				<table class="table-hottopic"><!--need css-->
 				<tr>
-					<td class="td-hottopic"><a onclick="settosyd()"><img class="img-worldnews"src="img/news/future.jpg"></a></td> 
+					<td class="td-hottopic"><img class="img-worldnews"src="img/news/USA-vs-China-WWIII.jpg"></td> 
 					<td class="td-hottopic">
 						<table class="table-hottopic">
-							<tr><p class="pagination-centered"><b>Lorem ipsum dolor sit amet</b></p></tr>
-							<tr><div align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis risus nisi. Suspendisse eros eros, suscipit in ultrices id, hendrerit nec purus. Nullam nisl eros, sagittis a vestibulum ut, pulvinar at erat. Mauris id nisl congue risus tempus volutpat et ac leo........ <b><a class="alignright"href="news-future.html">>></a></b></div></tr>
+							<tr><p class="pagination-centered"><b>US vs China</b></p></tr>
+							<tr><div align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis risus nisi. Suspendisse eros eros, suscipit in ultrices id, hendrerit nec purus. Nullam nisl eros, sagittis a vestibulum ut, pulvinar at erat. Mauris id nisl congue risus tempus volutpat et ac leo........ <b><a class="alignright"href="news-coldwar.html">>></a></b></div></tr>
 						</table>
 					</td>
 				</tr>
@@ -124,8 +95,6 @@
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/map.js"></script>
-
 	</body>
 
 </html>
