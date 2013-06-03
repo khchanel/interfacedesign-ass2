@@ -12,6 +12,8 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.css" />
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+		<script src="js/map.js"></script>
+
 	</head>
 
 	<body>
@@ -43,43 +45,9 @@
 
 								<!-- map initialize-->
 								<script>
-									var map = L.map('map').setView([37.02323,-98.61328], 3);
-
-									L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
-											attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade. Font Awesome by Dave Gandy',
-											key: 'BC9A493B41014CAABB98F0471D759707',
-											detectRetina: true
-									}).addTo(map);
-									<!-- markers icon -->
-									var markicon = L.Icon.extend({
-										options:{
-											iconSize:		[30, 30],
-											shadowSize:		[50, 64],
-											shadowAnchor:	[4, 62],
-											popupAnchor:	[0, -10]										
-										}
-									})
-									var mjpredie = new markicon({iconUrl:'img/news/MJ.png'})
-									var future = new markicon({iconUrl: 'img/news/future.jpg'})	
-									var	nasa = new markicon({iconUrl: 'img/news/nasa.jpg'})
-									var mars = new markicon({iconUrl: 'img/news/mars.png'})
-									var unemployment = new markicon({iconUrl: 'img/news/unemployment.png'})
-
-									<!-- set link -->
-									var mjpredielink = '<a href="news-mjpredie.html" class="speciallink">Micheal Jordan is about to die</a>';
-									var futurelink = '<a href="news-future.html" class="speciallink">High-tech city planning 2025</a>';
-									var nasalink = '<a href="news-nasa.html" class="speciallink">Erupts on the Sun</a>'
-									var marslink = '<a href="news-mars.html" class="speciallink">Ready for the trip to Mars</a>'
-									var unemploymentlink = '<a href="news-unemployment.html" class="speciallink">Sydney unemployment rate 2024</a>'
-
-									<!-- add markers-->
-									L.marker([41.83683,-87.71484],{icon: mjpredie}).addTo(map).bindPopup(mjpredielink);
-									L.marker([-33.87042, 151.25977],{icon: future}).addTo(map).bindPopup(futurelink)
-									L.marker([-36.03133, 146.60156],{icon: unemployment}).addTo(map).bindPopup(unemploymentlink)
-									L.marker([38.88304, -77.01622],{icon: nasa}).addTo(map).bindPopup(nasalink)
-									L.marker([39.90974, -121.64063],{icon: mars}).addTo(map).bindPopup(marslink)
-
+									buildmap();
 								</script>
+
 							</div>
 						</div>
 					</section>
@@ -135,8 +103,6 @@
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/map.js"></script>
-
 	</body>
 
 </html>
