@@ -6,7 +6,7 @@ function forward() {
 	window.history.forward();
 }
 
-function change_follow() {
+function change_follow_icon() {
 	if ($("#follow-txt").html() === "Followed") {
 		$("#follow-txt").html("Follow");
 	} else {
